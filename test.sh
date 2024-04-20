@@ -13,7 +13,7 @@ password=""
 randomizer=$(($RANDOM%(5-1+1)+1));
     echo "Random"
     echo $randomizer
-    if [[ $randomizer == 1 && numbersB == true ]]; then
+    if [[ $randomizer == 1 && numbersB ]]; then
         temp="${numbers:$(( RANDOM % ${#numbers} )):1}"
         password+=$temp
     elif [[ $randomizer == 2 && small ]]; then
